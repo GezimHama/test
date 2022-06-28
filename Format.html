@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+
+    <form action="#">
+        <input type="text" name="username" placeholder="username" minlength="2" maxlength="20" required/>
+        <br><br>
+        <input type="email" placeholder="john@smith.com" required/>
+        <br><br>
+        <input type="password" placeholder="Password" required/>
+        <br><br>
+        <input type="number" value="1" min="0" max="10"/>
+        <br><br>
+        <input type="search" placeholder="Search here"/>
+        <br><br>
+        <input type="color"/>
+        <br><br>
+        <label for="koha">Fillimi i sesionit</label>
+        <input type="time" id="koha"/>
+        <br>
+        <input type="month"/>
+        <br>
+        <input type="week"/>
+        <br>
+        <input type="datetime-local"/>
+        <br><br>
+        <!--Per palet e treta ose per backend in type hidden-->
+        <input type="hidden" value="100"/>
+        <br><br>
+        <input type="file" accept="image/*"/>
+        
+        <p>Choose your side</p>
+        <fieldset>
+            <legend>Education</legend>
+        <div>
+            <input type="checkbox" id="teamcap" name="CAP">
+            <label for="teamcap">CAP</label>
+        </div>
+        <div>
+            <input type="checkbox" id="teamironman" name="Ironman">
+            <label for="teamironman">Team Iron Man</label>
+        </div>
+       
+        <h4>Education</h4>
+            <input type="checkbox" id="BSc"/>
+            <label for="BSc">BSc</label>
+            <input type="checkbox" id="MSc"/>
+            <label for="MSc">MSc</label>
+            <input type="checkbox" id="PHd"/>
+            <label for="PHd">PHd</label>
+
+
+        <h4>Cilin nivel studimesh deshironi ta regjistroni?</h4>
+            <input type="radio" name="education" id="BSc_r" checked/>
+            <label for="BSc_r">BSc</label>
+            <input type="radio" name="education" id="MSc_r"/>
+            <label for="MSc_r">MSc</label>
+            <input type="radio" name="education" id="PHd_r"/>
+            <label for="PHd_r">PHd</label>
+        <br><br>
+        
+        </fieldset>
+        
+        
+        
+        Volume
+        <br>
+        <input type="range" min="1" max="10">
+        <br><br>
+        <textarea cols="30" rows="10" placeholder="Shkruaj porosine"></textarea>
+
+        <br><br>
+
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="New York">New York</option>
+            <option value="Los Angelos">Los Angelos</option>
+            <option value="Boston">Boston</option>
+            <option value="Chicago">Chicago</option>
+        </datalist>
+        <br><br>
+        <select>
+            <option value="New York">New York</option>
+            <optgroup label="New Cities">
+                <option value="Los Angelos">Los Angelos</option>
+            </optgroup>
+            <option value="Boston">Boston</option>
+            <option value="Chicago">Chicago</option>
+        </select>
+        <br><br>
+        <progress value="70" max="100">70%</progress>
+        
+
+
+
+
+        <br><br>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+        <br><br><br><br><br><br><br><br><br><br>
+    </form>
+</body>
+</html>
