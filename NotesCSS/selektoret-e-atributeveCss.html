@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selektoret e atributeve</title>
     <style>
-        .title
+        .tt
         {
             font-size: 30px;
             background-color: coral;
@@ -19,15 +19,53 @@
         }
 
         /* selektori i exiSTences - Targets any <p> element with an attribute called class */
-        /* p[id]{ */
-            /* color: red; */
-        /* } */
+        /* p[id]{
+            color: red;
+        } */
         
+        /* I SELEKTON TE GJITHE PARAGRAFAT ME ATRIBUTIN E KLASES DESCRIPTION */
+        /* .description{
+            color: green;
+        } */
+
+        /* I SELEKTON PARAGRAFAT ME ATRIBUTIN E KLASES TEXT-CENTER */
+        /* .text-center{
+            text-align: center;
+        } */
+
+        /* Selekton atributin title*/
+        /* h1[class^="title"]{
+            color: blueviolet;
+        } */
+
+        /* Selekton atributin prefixi i te cilit eshte "be" ose fillon me be  ^=    */
+        /* h4[class^="be"]{
+            color: red;
+        } */
+
+        /* Selekton atributin ku ne mes te saj ka stringun "lo"    *=   */
+        /* h4[class*="lo"]{
+            color: blue;
+        } */
+
+        /* Kontrollon linqet qe perfundojn me .pdf        $=      */
+        /* a[href$=".pdf"]
+        {
+            background-color: violet;
+        } */
 
     </style>
 </head>
 <body>
-    <h2 class="title">Selektoret e atributeve</h2>
+
+    <h1 class="title text-center m-5">Blog</h1>
+
+    <h4 class="bestblogever">Best blog ever</h4>
+    <h4 class="be-data-lo-ab">21 06 2022</h4>
+
+
+
+    <h2 class="tt">Selektoret e atributeve</h2>
 
     <article class="big">
         <h3>Text</h3>

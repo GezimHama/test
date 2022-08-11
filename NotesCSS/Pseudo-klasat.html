@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo klasat</title>
+    <style>
+        .h3title
+        {
+            text-align: center;
+            padding: 10px;
+            margin-right: 300px;
+            margin-left: 300px;
+            background-color: burlywood;
+            color: aliceblue;
+        }
+        .h3title:hover
+        {
+            background-color: aqua;
+        }
+
+
+        .sintaksa
+        {
+            font-size: 30px;
+        }
+    
+        /* I stilizon rreshtat tek te tabelets */
+        tr:nth-child(odd)
+        {
+            background-color: rgb(179, 123, 123);
+            font-size: 35px;
+            text-align: center;
+        }
+
+        a
+        {
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+        /* E ndryshon ngjyren e linkut on-hover */
+        a:hover
+        {
+            background-color: rgb(88, 82, 73);
+        }
+
+        /* E ndryhon ngjyren e linkut kur eshte aktiv */
+        a:active
+        {
+            background-color: darkcyan;
+            color: red;
+        }
+
+        /* Para cdo paragrafi shtohet fjala RED */
+        p::before
+        {
+            content: 'RED ';
+            padding: 20px;
+            display: block;
+            background-color: darkcyan;
+            color: white;
+            width: 120px;
+            margin-bottom: 40px;
+            margin-top: 50px;
+            margin-left: 60px;
+            text-align: center;
+        }
+        /* p:first-child
+        {
+            background-color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <h3 class="h3title">Pseudo klasat</h3>
+
+    <pre class="sintaksa">
+        Sintaksa:
+        
+        selector:pseudo-claas
+        {
+            property: value;
+        }
+    </pre>
+    <br><br>
+    
+    <a href="#">Download</a>
+
+    <br><br>
+
+    <table border="1" cellspacing="5" cellpadding="10">
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+        <tr>   
+            <td>Lorem</td>
+            <td>Lorem</td>
+            <td>Lorem</td>
+        </tr>
+    </table>
+    <hr>
+
+    <br><br>
+
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt aut quaerat ipsam accusantium inventore velit. Tenetur voluptatum repellat, iure nam sunt mollitia est quod molestiae hic facere officiis dolores voluptatem!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis tenetur beatae iusto dolorem consequatur odio voluptatem earum saepe, laborum incidunt, error ea! Quisquam maiores, labore dolores possimus modi velit voluptatum.</p>
+
+</body>
+</html>
