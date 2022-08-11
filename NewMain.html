@@ -6,52 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Notes</title>
     <style>
-        a
+        .header
         {
-            text-decoration: none;
-            padding: 10px;
-            color: black;
+            width: 1200px;
+            display: inline-block;
+            background-color: rgb(46, 46, 46);
+            border: 0px solid rgb(72, 72, 72);
+            border-radius: 35px;
+            color: antiquewhite; 
+            padding: 20px;
+            margin: 10px auto 5px 150px;
             text-align: center;
-            border: 1px solid black;
         }
-        li
+        .h3-1
         {
+            display: inline;
+            margin: 135px;
+        }
+        .h3-2
+        {
+            display: inline;
+            margin: 135px;
+        }
+        .h3-3
+        {
+            display: inline;
+            margin: 135px;
+        }
+        h2
+        {
+            width: 1030px;
+            background-color: rgb(184, 73, 73);
+            border: 0px solid rgb(184, 73, 73);
+            color: aliceblue;
+            display: inline-block;
+            padding: 15px 20px 15px 20px;
+            margin: 10px auto 5px 220px;
+            text-align: center;
+            border-radius: 35px;
+        }
+        
+        .Css3
+        {
+            background-color: cornflowerblue;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .javascript
+        {
+            background-color:rgb(232, 232, 60) ;
+            margin-bottom: 10px;
+        }
+
+        .td1
+        {
+            width: 250px;
+            height: 300px;
+            background-color: rgb(29, 20, 20);
+            border: 0px solid rgb(29, 20, 20);
+            display: inline-block;
+            padding: 15px 20px 15px 20px;
+            margin-top: 10px;
+            margin-left: 220px;
+            margin-bottom: 10px;
+            text-align: left;
+            border-radius: 35px;
+         }
+         .td2
+         {
+            width: 250px;
+            height: 300px;
+            background-color: rgb(29, 20, 20);
+            border: 0px solid rgb(29, 20, 20);
+            display: inline-block;
+            padding: 15px 20px 15px 20px;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            text-align: left;
+            border-radius: 35px;
+         }
+         .td3
+        {
+            width: 250px;
+            height: 300px;
+            background-color: rgb(29, 20, 20);
+            border: 0px solid rgb(29, 20, 20);
+            display: inline-block;
+            padding: 15px 20px 15px 20px;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            text-align: left;
+            border-radius: 35px;
+         }
+         li
+         {
             list-style-type: none;
-            padding: 10px;
+            list-style-position: inside;
+            margin-top: 5px;
+            margin-bottom: 5px;
+         }
+
+         a
+         {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 18px;
+         }
+         a:hover
+         {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            padding-top: 5px;
+            background-color: rgb(184, 73, 73);
+         }
+         .footer
+         {
+            background-color: rgb(44, 44, 44);
+            color: aliceblue;
+            border: 0px solid;
+            padding: 50px;
+            display:block;
             text-align: center;
-        }
-        td
-        {
-            border-spacing: 5px;
-        }
-        tr
-        {
-            border-spacing: 10px;
-        }
+         }
+         .facebook:hover
+         {
+            background-color: rgb(76, 76, 247);
+         }
+         .instagram:hover
+         {
+            background-color: rgb(235, 36, 76);
+         }
     </style>
 </head>
 <body>
-    <table width="900" align="center" bgcolor="lightgray" cellpadding="2" cellspacing="3" border="1">
-        <thead>
-            <td align="center">
-                <h3>Table of Notes</h3>
-            </td>
-            <td align="center">
-                <h3>Table of Tasks</h3>
-            </td>
-            <td align="center">
-                <h3>Table of Exercies</h3>
-            </td>
-        </thead>
-        
-        <tr>
-            <td colspan="3" align="center" bgcolor="#E44D26">
-                <h4>HTML5</h4>
-            </td>
-        </tr>
 
-        <td align="center" width="300">
-            <ol>
+    <div class="header">
+        <h3 class="h3-1">Table of Notes</h3>
+        <h3 class="h3-2">Table of Tasks</h3>
+        <h3 class="h3-3">Table of Exercies</h3>
+    </div>
+
+    <h2>HTML 5</h2>
+    <table class="html">
+        <td class="td1">
+            <ul>
                 <li><a href="NotesHTML/First-doc.html">First document</a></li>
                 <li><a href="NotesHTML/meta-etiketat.html">Meta etiketat</a></li>
                 <li><a href="NotesHTML/Element-tags.html">Taget semantike</a></li>
@@ -63,11 +165,10 @@
                 <li><a href="NotesHTML/iFrames.html">iFrames</a></li>
                 <li><a href="NotesHTML/audiovideo.html">Audio & Video</a></li>
                 <li><a href="NotesHTML/Tables.html">Tabelat</a></li>
-            </ol>
+            </ul>
         </td>
-
-        <td align="center" width="300">
-            <ol>
+        <td class="td2">
+            <ul>
                 <li><a href="DetyratHTML/Detyra-1.html">Detyra 1 - CV</a></li>
                 <li><a href="DetyratHTML/Detyra-2.html">Detyra 2</a></li>
                 <li><a href="DetyratHTML/Detyra-3.html">Detyra 3</a></li>
@@ -78,11 +179,10 @@
                 <li><a href="DetyratHTML/Detyra-8.html">Detyra 8</a></li>
                 <li><a href="DetyratHTML/Detyra-9.html">Detyra 9</a></li>
                 <li><a href="DetyratHTML/Detyra-10.html">Detyra 10</a></li>
-            </ol>
+            </ul>
         </td>
-
-        <td align="center" width="300">
-            <ol>
+        <td class="td3">
+            <ul>
                 <li><a href="UshtrimetHTML/Ushtrimi-1.html">Ushtrimi 1 - The Brown Bear</a></li>
                 <li><a href="UshtrimetHTML/Ushtrimi-2.html">Ushtrimi 2</a></li>
                 <li><a href="UshtrimetHTML/Ushtrimi-3.html">Ushtrimi 3</a></li>
@@ -93,17 +193,16 @@
                 <li><a href="UshtrimetHTML/Ushtrimi-8.html">Ushtrimi 8</a></li>
                 <li><a href="UshtrimetHTML/Ushtrimi-9.html">Ushtrimi 9</a></li>
                 <li><a href="UshtrimetHTML/Ushtrimi-10.html">Ushtrimi 10</a></li>
-            </ol>
+            </ul>
         </td>
+    </table>
 
-        <tr>
-            <td colspan="3" align="center" bgcolor="#2965f1">
-                <h4>CSS3</h4>
-            </td>
-        </tr>
+    <!-- Tabela e CSS -->
+    <h2 class="Css3">CSS3</h2>
     
-        <td align="center" width="300">
-            <ol>
+    <table class="css3">
+        <td class="td1">
+            <ul>
                 <li><a href="NotesCSS/Hyrjenecss.html">Hyrje</a></li>
                 <li><a href="NotesCSS/Box-Model.html">Modeli i kutise</a></li>
                 <li><a href="NotesCSS/Gallery.html">Gallery</a></li>
@@ -114,11 +213,10 @@
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
-            </ol>
+            </ul>
         </td>
-
-        <td align="center" width="300">
-            <ol>
+        <td class="td2">
+            <ul>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -129,11 +227,10 @@
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
-            </ol>
+            </ul>
         </td>
-
-        <td align="center" width="300">
-            <ol>
+        <td class="td3">
+            <ul>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
@@ -144,88 +241,67 @@
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
                 <li><a href=""></a></li>
-            </ol>
+            </ul>
         </td>
-
-        <tr>
-            <td colspan="3" align="center" bgcolor="#F0DB4F">
-                <h4>JavaScript</h4>
-            </td>
-        </tr>
-    
-        <td align="center" width="300">
-            <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-        </td>
-
-        <td align="center" width="300">
-            <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-        </td>
-
-        <td align="center" width="300">
-            <ol>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ol>
-        </td>
-
-
-        <!-- I kthen shkronjat mrapsht ose te pasqyruara nga e djathta ne te majt -->
-        <!-- <bdo dir="rtl">Gzimi is learning Web Development!</bdo> -->
-
-
-
-        <!-- E bon fotografin me u zhvendos ne te majt te paragrafit -->
-        <!-- <p>
-            <img src="../test/Assests/Images/ushtrimi2-01.jpg" style="float: right;">
-            This is a paragraph.
-            This paragraph contains an image
-        </p> -->
-        
-        <tfoot>
-        <td align="center" colspan="3">
-            <div align="center">
-                <a href="https://www.facebook.com/" target="_blank">
-                <input type="image" src="../test/Assests/Images/facebook.png" height="30"/>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                <input type="image" src="../test/Assests/Images/Instagram.svg" height="30"/>
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                <input type="image" src="../test/Assests/Images/youtube.png" height="30"/>
-                </a>
-            </div>
-        </td>
-        </tfoot>
     </table>
+
+    <!-- Tabela e Java Script -->
+    <h2 class="javascript">Java Script</h2>
+
+    <table class="js">
+        <td class="td1">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </td>
+        <td class="td2">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </td>
+        <td class="td3">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </td>
+    </table>
+
+    <footer class="footer">
+        <a href="https://www.instagram.com/gzimhaama/" class="instagram" target="_blank">Instagram</a><br>
+        <a href="https://www.facebook.com" class="facebook" target="_blank">Facebook</a><br>
+        <a href="https://www.youtube.com" class="youtube" target="_blank">Youtube</a>
+        <br><br><br><br>
+        <a href="../test/Main.html" target="_blank">OLD MAIN PAGE</a>
+        <br><br><br><br>
+        All rights reserved &copy;
+    </footer>
+
 </body>
 </html>
